@@ -1,0 +1,196 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background: url("./images/4.jpg");
+}
+.header {
+  /* height: 220px; */
+  text-align: center;
+}
+#header-link {
+  text-decoration: none;
+}
+.headtag {
+  text-decoration: none;
+  height: fit-content;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 10px;
+  color: aliceblue;
+  /* line-height: 3; */
+}
+#date-time {
+  font-family: "Roboto", "Helvetica Neue", "sans-serif";
+  font-size: 15px;
+  font-weight: bold;
+  width: fit-content;
+  color: aliceblue;
+  /* opacity: 0.8; */
+  display: flex;
+  flex-direction: row;
+  /* text-align: cente; */
+  margin: 0 auto 50px auto;
+}
+#date-time p {
+  margin: 10px;
+}
+.card {
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
+  padding: 20px;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  color: black;
+  border-radius: 8px;
+}
+.card-icon {
+  height: 70px;
+  width: 70px;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+.card-name {
+  font-size: 25px;
+  margin-top: 8px;
+}
+.sub-text {
+  margin-top: 0;
+  font-size: 12px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#page {
+  position: relative;
+}
+#fab-button img {
+  height: 25px;
+  width: 25px;
+}
+#fab-button {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  border: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #0096e0;
+}
+#fab-button:hover {
+  background-color: azure;
+}
+#modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+#modal-background {
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  opacity: 70%;
+  filter: blur(1px);
+}
+#modal-contents {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: #fafafa;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 5px;
+  min-width: calc(100% - 60rem);
+  box-shadow: 2px 5px 10px 0px rgb(0 0 0 / 50%);
+}
+#modal h1 {
+  color: white;
+}
+.create-task {
+  text-align: center;
+}
+label {
+  font-family: "Roboto", "Helvetica Neue", "sans-serif";
+  font-size: 1rem;
+}
+#task-name {
+  width: 90%;
+  height: 32px;
+  font-size: 16px;
+  border-color: rgb(0 0 0 / 50%);
+  padding: 5px 13px;
+  margin-top: 10px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  text-align: left;
+}
+.modal-button {
+  background-color: transparent;
+  border: none;
+}
+.modal-button img {
+  height: 24px;
+  width: 24px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+#cancel {
+  padding: 0;
+  justify-content: center;
+  position: absolute;
+  margin: 15px 0;
+  top: 0;
+  right: 0;
+  display: block;
+}
+#cancel img {
+  width: 16px;
+  height: 16px;
+}
+.select {
+  text-align: left;
+  width: 100px;
+  margin: 12px 4px;
+}
+#date-picker {
+  border: none;
+  border-radius: 5px;
+  width: inherit;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  background-color: transparent;
+}
+/* .react-datepicker__close-icon::before {
+  background-color: transparent;
+}
+.react-datepicker__close-icon::after {
+  background-color: red;
+} */
